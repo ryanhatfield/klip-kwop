@@ -16,7 +16,7 @@ help: ## Print this help message
 export KUBECONFIG=.kwokconfig
 export KWOK_KUBE_VERSION=1.25.0
 CLUSTER_NAME=operator-example
-REPO=operator-example
+REPO=rust-kubernetes-operator-example
 IN_REPO=cd $(REPO) &&
 
 clone: $(REPO) ## Clone the example repository
