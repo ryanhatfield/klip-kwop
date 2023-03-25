@@ -18,6 +18,9 @@ jobs:
           ref: refs/heads/master
           path: rust-kubernetes-operator-example
 
+      - name: kwok
+        run: brew install kwok
+
       - name: Help
         run: make help
 
