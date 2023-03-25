@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           repository: Pscheidl/rust-kubernetes-operator-example
-          ref: refs/heads/main
+          ref: refs/heads/master
           path: rust-kubernetes-operator-example
 
       - name: Help
