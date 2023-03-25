@@ -34,10 +34,10 @@ $(KUBECONFIG):
 crd: $(KUBECONFIG) $(REPO) ## Apply the CRD to the kwok cluster
 	kubectl apply -f $(REPO)/echoes.example.com.yaml
 
-build: crd ## Build the example crate
+build: ## Build the example crate
 	$(IN_REPO) cargo build
 
-run: build ## Run the example crate
+run: build crd ## Run the example crate
 	$(IN_REPO) KUBECONFIG=../$(KUBECONFIG) cargo run
 
 echo: ## Apply the echo example resource to the kwok cluster
