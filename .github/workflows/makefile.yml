@@ -31,9 +31,6 @@ jobs:
       - name: Build
         run: make build
 
-      - name: kwok
-        run: brew install kwok
-
       - name: Get kwok
         run: wget -O kwokctl -c "https://github.com/kubernetes-sigs/kwok/releases/download/v0.1.1/kwokctl-$(go env GOOS)-$(go env GOARCH)"
 
